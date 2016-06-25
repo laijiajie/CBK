@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#5dae5d"
+            />
+        <RelativeLayout
+            android:id="@+id/detail_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/detail_toolbar"
+            android:background="#4a4">
+            <TextView
+                android:id="@+id/detail_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:id="@+id/detail_tv_key"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="detail_tv_key"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/detail_tv_title"/>
+
+            <TextView
+                android:id="@+id/detail_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/detail_tv_title"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/detail_tv_key"
+                android:text="detail_tv_time" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/detail_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/detail_rl_title"/>
+
+    </RelativeLayout>
+</ScrollView>
